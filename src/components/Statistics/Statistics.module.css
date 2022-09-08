@@ -1,0 +1,78 @@
+ul {
+ padding: 0;
+}
+
+.card {
+ position: absolute;
+ top: 47.5%;
+ left: 25%;
+ height: 300px;
+ width: 420px;
+ transform: translate(-50%, -50%);
+ transform-style: preserve-3d;
+ perspective: 600px;
+ transition: 0.5s;
+ border-radius: 8px;
+}
+.card:hover .cardFront {
+ transform: rotateX(-180deg);
+}
+.card:hover .cardBack {
+ transform: rotateX(0deg);
+}
+
+.cardFront {
+ height: 100%;
+ width: 100%;
+
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: url(https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg);
+ background-position: 50% 50%;
+ background-size: cover;
+ background-color: #000000;
+ backface-visibility: hidden;
+ transform: rotateX(0deg);
+ transition: 0.5s;
+ border-radius: 8px;
+}
+
+.cardBack {
+ height: 100%;
+ width: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: url(https://i.loli.net/2019/10/18/uXF1Kx7lzELB6wf.jpg);
+ background-color: #000000;
+ backface-visibility: hidden;
+ transform: rotateX(180deg);
+ transition: 0.5s;
+ color: #ffffff;
+ text-align: center;
+ border-radius: 8px;
+}
+h2 {
+ margin-left: auto;
+ margin-right: auto;
+ font-size: 26px;
+ margin-top: 60px;
+ margin-bottom: 50px;
+}
+.statList {
+ display: flex;
+ list-style: none;
+}
+.item {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ flex-basis: calc(100% / 5);
+ row-gap: 10px;
+}
+span {
+ font-size: 20px;
+ line-height: 1.5em;
+}
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans:400,700';
