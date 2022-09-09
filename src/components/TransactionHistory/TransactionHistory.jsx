@@ -8,16 +8,16 @@ export function TransactionHistory(props) {
   <table className={style.transactionHistory}>
    <thead>
     <tr className={style.titel}>
-     <th className={style.typeTitel}>Type</th>
-     <th className={style.amountTitel}>Amount</th>
-     <th className={style.currencyTitel}>Currency</th>
+     <th className={style.typeTitel}>TYPE</th>
+     <th className={style.amountTitel}>AMOUNT</th>
+     <th className={style.currencyTitel}>CURRENCY</th>
     </tr>
    </thead>
    {items.map(({ id, type, amount, currency }) => {
     return (
      <tbody key={id}>
       <tr className={style.tbodyTr}>
-       <td>{type}</td>
+       <td>{type.charAt(0).toUpperCase() + type.slice(1)}</td>
        <td>{amount}</td>
        <td>{currency}</td>
       </tr>
