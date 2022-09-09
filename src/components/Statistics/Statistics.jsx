@@ -4,7 +4,6 @@ import style from './Statistics.module.css';
 
 export function Statistics(props) {
  const { stats } = props;
- console.log(props);
  return (
   <section className={style.card}>
    <div className={style.cardFront}></div>
@@ -26,22 +25,6 @@ export function Statistics(props) {
   </section>
  );
 }
-
-//   <section className={style.statistics}>
-//    <h2 className={style.title}> Upload stats </h2>
-//    <ul className={style.statList}>
-//     {stats.map(({ percentage, label, id }) => {
-//      return (
-//       <li key={id} className={style.item}>
-//        <span className={style.label}>{percentage}</span>
-//        <span className={style.percentage}>{label}</span>
-//       </li>
-//      );
-//     })}
-//    </ul>
-//   </section>
-//  );
-// }
 
 Statistics.propTypes = {
  stats: PropTypes.arrayOf(

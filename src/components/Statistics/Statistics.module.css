@@ -3,12 +3,12 @@ ul {
 }
 
 .card {
- position: absolute;
+ /* position: absolute; */
  top: 47.5%;
  left: 25%;
  height: 300px;
  width: 420px;
- transform: translate(-50%, -50%);
+ /* transform: translate(-50%, -50%); */
  transform-style: preserve-3d;
  perspective: 600px;
  transition: 0.5s;
