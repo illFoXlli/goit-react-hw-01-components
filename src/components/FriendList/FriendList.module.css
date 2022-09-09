@@ -2,115 +2,124 @@ ul,
 li,
 p,
 span {
- margin: 0;
- padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .friendList {
- display: flex;
- gap: 10px;
- flex-direction: column;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
 }
 
 .item {
- min-width: 300px;
- display: flex;
- border: 1px solid grey;
- border-radius: 10px;
- box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .status {
- display: inline-block;
- margin: auto;
- background-color: yellow;
- border-radius: 100%;
- width: 20px;
- height: 20px;
+  display: inline-block;
+  margin: auto;
+  background-color: yellow;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
 
- /* margin: 20px; */
+  /* margin: 20px; */
 }
-.statusOff {
+/* .statusOff {
  background-color: red;
 }
 .statusOn {
  background-color: green;
  -webkit-animation: pulsing 2s infinite;
  animation: pulsing 2s infinite;
+} */
+
+.false {
+  background-color: red;
+}
+.true {
+  background-color: green;
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
 }
 
 .avatar {
- padding: 10px;
+  padding: 10px;
 }
 .avatar:hover {
- -webkit-animation: rotate-scale-up 0.65s linear both;
- animation: rotate-scale-up 0.65s linear both;
+  -webkit-animation: rotate-scale-up 0.65s linear both;
+  animation: rotate-scale-up 0.65s linear both;
 }
 
 .name {
- display: inline-block;
- min-width: 100px;
+  display: inline-block;
+  min-width: 100px;
 
- padding-left: 20px;
- font-size: 20px;
- line-height: 1.5em;
- font-weight: bold;
- margin: auto;
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: bold;
+  margin: auto;
 }
 @-webkit-keyframes pulsing {
- 0% {
-  -webkit-transform: scale(0.5, 0.5);
-  transform: scale(0.5, 0.5);
- }
- 50% {
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
- }
- 100% {
-  -webkit-transform: scale(0.5, 0.5);
-  transform: scale(0.5, 0.5);
- }
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
 }
 
 @keyframes pulsing {
- 0% {
-  -webkit-transform: scale(0.5, 0.5);
-  transform: scale(0.5, 0.5);
- }
- 50% {
-  -webkit-transform: scale(1, 1);
-  transform: scale(1, 1);
- }
- 100% {
-  -webkit-transform: scale(0.5, 0.5);
-  transform: scale(0.5, 0.5);
- }
+  0% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(0.5, 0.5);
+    transform: scale(0.5, 0.5);
+  }
 }
 @-webkit-keyframes rotate-scale-up {
- 0% {
-  -webkit-transform: scale(1) rotateZ(0);
-  transform: scale(1) rotateZ(0);
- }
- 50% {
-  -webkit-transform: scale(2) rotateZ(180deg);
-  transform: scale(2) rotateZ(180deg);
- }
- 100% {
-  -webkit-transform: scale(1) rotateZ(360deg);
-  transform: scale(1) rotateZ(360deg);
- }
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
 }
 @keyframes rotate-scale-up {
- 0% {
-  -webkit-transform: scale(1) rotateZ(0);
-  transform: scale(1) rotateZ(0);
- }
- 50% {
-  -webkit-transform: scale(2) rotateZ(180deg);
-  transform: scale(2) rotateZ(180deg);
- }
- 100% {
-  -webkit-transform: scale(1) rotateZ(360deg);
-  transform: scale(1) rotateZ(360deg);
- }
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
+  }
 }
