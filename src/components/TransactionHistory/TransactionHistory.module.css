@@ -1,72 +1,72 @@
 .transactionHistory {
- height: 420px;
- display: block;
- overflow-y: scroll;
- border: 1px solid gray;
- border-radius: 4px;
- box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
+  height: 420px;
+  display: block;
+  overflow-y: scroll;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.titel {
- overflow-y: visible;
- background-color: rgb(74, 179, 235);
- color: aliceblue;
+.transactionHistory > .titel {
+  overflow-y: visible;
+  background-color: rgb(74, 179, 235);
+  color: aliceblue;
 }
 .typeTitel {
- width: 200px;
- font-size: 20px;
- line-height: 1.5em;
- font-weight: bold;
+  width: 200px;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: bold;
 }
 .amountTitel {
- width: 200px;
- font-size: 20px;
- line-height: 1.5em;
- font-weight: bold;
+  width: 200px;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: bold;
 }
 
 .currencyTitel {
- width: 200px;
- font-size: 20px;
- line-height: 1.5em;
- font-weight: bold;
+  width: 200px;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-weight: bold;
 }
 
 .tbodyTr {
- font-size: 20px;
- line-height: 1.5em;
- text-align: center;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-align: center;
 }
 .tbodyTr > td:nth-child(1) {
- text-align: left;
- padding-left: 20px;
+  text-align: left;
+  padding-left: 20px;
 }
 
 tbody {
- background-color: rgba(234, 229, 240, 0.5);
+  background-color: rgba(234, 229, 240, 0.5);
 }
 tbody:nth-child(2n) {
- background-color: rgba(165, 158, 173, 0.5);
+  background-color: rgba(165, 158, 173, 0.5);
 }
 
 /* width */
 .transactionHistory::-webkit-scrollbar {
- width: 6px;
+  width: 6px;
 }
 
 /* Track */
 .transactionHistory::-webkit-scrollbar-track {
- box-shadow: inset 0 0 5px grey;
- border-radius: 10px;
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
 }
 
 /* Handle */
 .transactionHistory::-webkit-scrollbar-thumb {
- background: rgb(137, 207, 245);
- border-radius: 6px;
+  background: rgb(137, 207, 245);
+  border-radius: 6px;
 }
 
 /* Handle on hover */
 .transactionHistory::-webkit-scrollbar-thumb:hover {
- background: #625d5d;
+  background: #625d5d;
 }
