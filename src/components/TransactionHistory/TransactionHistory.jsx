@@ -38,7 +38,7 @@ export function TransactionHistory(props) {
 }
 
 TransactionHistory.propTypes = {
-  item: PropTypes.objectOf({
+  item: PropTypes.arrayOf({
     id: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,
